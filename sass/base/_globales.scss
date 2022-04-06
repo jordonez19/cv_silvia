@@ -1,0 +1,73 @@
+
+@use '../base/variables'  as v;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: v.$poppins;
+}
+body{
+    background-color: v.$background;
+}
+
+.container {
+    width: 100%;
+    padding:0 10%;
+    margin: 0 auto;
+}
+
+.nombre{
+    color:v.$blanco;
+}
+h1,h2,h3,h4,h5{
+        margin-bottom:1rem;
+        color:v.$secondary;
+}
+h1{
+    font-size:45px;
+}
+h2{
+    font-size:35px;
+}
+h3{
+    font-size:25px;
+}
+
+p{
+    color:v.$blanco;
+    z-index: 9999;
+    font-weight: 500; 
+    font-size: 19px;
+}
+ul{
+    color:v.$secondary;
+}
+li{
+    font-weight: 500; 
+    list-style:none;
+}
+.li-p{
+    padding-left: 1rem;
+    color:v.$secondary;
+}
+.list-style-up{
+    color:v.$secondary;
+    li{
+        text-align: justify;
+        list-style:inside;
+    }
+
+}
+ol{
+    color:v.$secondary;
+}
+.bg-blanco{
+    h1{
+        margin-bottom:1rem;
+    }
+    h1,p{
+        text-align:justify;
+        color:v.$secondary;
+    }
+}

@@ -1,0 +1,92 @@
+@use '../base/variables' as v;
+//@use '../base/mixins' as m;
+
+.container-main{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	position: relative;
+    height: 90vh;
+	align-items: center;
+	justify-content: center;
+	width:100%;
+	padding:0 10%;
+	clip-path: polygon(0 0, 100% 0, 100% 64%, 0 77%);
+	background:v.$secondary;
+
+}
+
+
+.imagen-profile {
+    border-radius: 43% 57% 64% 36%/45% 33% 67% 55%;
+	border-top: 3px solid v.$blanco;
+	border-left: 3px solid v.$blanco;
+	border-bottom: 15px solid v.$blanco ;
+	border-right: 15px solid v.$blanco;
+    background-color: transparent;
+    z-index: 99;
+    position: absolute;
+    right: 10%;
+    top: 14%;
+	filter: drop-shadow(5px 5px 10px v.$primary);
+	img{
+		filter: drop-shadow(0px 0px 0px v.$primary);
+
+	}
+}
+.imagen-main{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center; 
+	position: relative;
+}
+/* DNA */
+#dna-container {
+	position: absolute;
+    top: 14rem;
+    width: -112px;
+    margin-right: 0;
+    font-size: 5rem;
+    -ms-transform: rotate(295deg);
+    -webkit-transform: rotate(295deg);
+	filter: drop-shadow(5px 5px 10px v.$primary);
+    transform: rotate(303deg);
+    right: 34rem;
+}
+.dna{
+	position:absolute;
+	height:.5em;
+	width:.5em;
+	background:v.$blanco;
+	border-radius:50%;
+	animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-webkit-animation-iteration-count:infinite;
+	-webkit-animation-duration:5s;-moz-animation-duration:5s;-o-animation-duration:5s;-ms-animation-duration:5s;animation-duration:5s;
+}
+/*Animation Names*/
+#dna1{-webkit-animation-name:dna1; 	 -moz-animation-name:dna1;  -o-animation-name:dna1;  animation-name:dna1;}
+#dna2{-webkit-animation-name:dna2; 	 -moz-animation-name:dna2;  -o-animation-name:dna2;  animation-name:dna2;}  /*Delays*/
+#dna3{-webkit-animation-name:dna3; 	 -moz-animation-name:dna3;  -o-animation-name:dna3;  animation-name:dna3;	 -webkit-animation-delay:.2s; animation-delay:.2s;}
+#dna4{-webkit-animation-name:dna4; 	 -moz-animation-name:dna4;  -o-animation-name:dna4;  animation-name:dna4;	 -webkit-animation-delay:.2s; animation-delay:.2s;}
+#dna5{-webkit-animation-name:dna5; 	 -moz-animation-name:dna5;  -o-animation-name:dna5;  animation-name:dna5;	 -webkit-animation-delay:.4s; animation-delay:.4s;}
+#dna6{-webkit-animation-name:dna6; 	 -moz-animation-name:dna6;  -o-animation-name:dna6;  animation-name:dna6;	 -webkit-animation-delay:.4s; animation-delay:.4s;}
+#dna7{-webkit-animation-name:dna7; 	 -moz-animation-name:dna7;  -o-animation-name:dna7;  animation-name:dna7;	 -webkit-animation-delay:.6s; animation-delay:.6s;}
+#dna8{-webkit-animation-name:dna8; 	 -moz-animation-name:dna8;  -o-animation-name:dna8;  animation-name:dna8;  -webkit-animation-delay:.6s; animation-delay:.6s;}    
+#dna9{-webkit-animation-name:dna9; 	 -moz-animation-name:dna9;  -o-animation-name:dna9;  animation-name:dna9;	 -webkit-animation-delay:.8s; animation-delay:.8s;}
+#dna10{	filter: drop-shadow(5px 5px 10px #9a9aaa); background:v.$secondary; -webkit-animation-name:dna10; -moz-animation-name:dna10; -o-animation-name:dna10; animation-name:dna10; -webkit-animation-delay:.8s; animation-delay:.8s;}
+#dna11{	filter: drop-shadow(5px 5px 10px #9a9aaa); background:v.$secondary; -webkit-animation-name:dna11; -moz-animation-name:dna11; -o-animation-name:dna11; animation-name:dna11; -webkit-animation-delay:1s;  animation-delay:1s;}
+#dna12{	filter: drop-shadow(5px 5px 10px #9a9aaa); background:v.$secondary; -webkit-animation-name:dna12; -moz-animation-name:dna12; -o-animation-name:dna12; animation-name:dna12; -webkit-animation-delay:1s;  animation-delay:1s;}
+
+
+/*Key Frames*/
+@keyframes dna1{0%{left:  0em;}    			  25%{height:.75em;width:.75em;}	50%{left: 2em;} 	75%{height:.25em;width:.25em;}	100%{left: 0em;}} 
+@keyframes dna2{0%{right: 0em;}    			  25%{height:.25em;width:.25em;}	50%{right:2em;}  	75%{height:.75em;width:.75em;}	100%{right:0em;}} 
+@keyframes dna3{0%{left:  0em; top:1em;} 	25%{height:.75em;width:.75em;}	50%{left: 2em;}  	75%{height:.25em;width:.25em;}	100%{left: 0em; top:1em;}} 
+@keyframes dna4{0%{right: 0em; top:1em;}	25%{height:.25em;width:.25em;}	50%{right:2em;}  	75%{height:.75em;width:.75em;} 	100%{right:0em; top:1em;}} 
+@keyframes dna5{0%{left:  0em; top:2em;} 	25%{height:.75em;width:.75em;}	50%{left: 2em;}  	75%{height:.25em;width:.25em;} 	100%{left: 0em; top:2em;}} 
+@keyframes dna6{0%{right: 0em; top:2em;}	25%{height:.25em;width:.25em;}	50%{right:2em;}  	75%{height:.75em;width:.75em;} 	100%{right:0em; top:2em;}} 
+@keyframes dna7{0%{left:  0em; top:3em;}  25%{height:.75em;width:.75em;}	50%{left: 2em;}  	75%{height:.25em;width:.25em;} 	100%{left: 0em; top:3em;}} 
+@keyframes dna8{0%{right: 0em; top:3em;}  25%{height:.25em;width:.25em;}	50%{right:2em;}  	75%{height:.75em;width:.75em;} 	100%{right:0em; top:3em;}} 
+@keyframes dna9{0%{left:  0em; top:4em;} 	25%{height:.75em;width:.75em;}	50%{left: 2em;}  	75%{height:.25em;width:.25em;} 	100%{left: 0em; top:4em;}} 
+@keyframes dna10{0%{right:0em; top:4em;}	25%{height:.25em;width:.25em; }	50%{right:2em;}  	75%{height:.75em;width:.75em;} 	100%{right:0em; top:4em;}} 
+@keyframes dna11{0%{left: 0em; top:5em; background:v.$secondary;} 	25%{height:.75em;width:.75em; background:v.$blanco;}	50%{left: 2em; background:v.$blanco;}  	75%{height:.25em;width:.25em; background:v.$blanco;} 	100%{left: 0em; top:5em;background:v.$secondary;}} 
+@keyframes dna12{0%{right:0em; top:5em;}	25%{height:.25em;width:.25em;}	50%{right:2em;}  	75%{height:.75em;width:.75em;} 	100%{right:0em; top:5em;}} 

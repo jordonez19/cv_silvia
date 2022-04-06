@@ -1,0 +1,17 @@
+{
+  "name": "silvias",
+  "version": "1.0.0",
+  "description": "silvias cv",
+  "main": "app.js",
+  "scripts": {
+    "sass": "sass  --watch sass:css"
+  },
+  "keywords": [
+    "cv"
+  ],
+  "author": "xavidev",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.49.11"
+  }
+}
